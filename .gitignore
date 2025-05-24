@@ -1,0 +1,26 @@
+# === General ===
+node_modules/
+.env
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+coverage/
+
+# === VSCode ===
+.vscode/
+.history/
+
+# === React Frontend ===
+client/node_modules/
+client/build/
+client/.env
+
+# === Node.js Backend ===
+server/node_modules/
+server/.env
+server/logs/
+server/tmp/
