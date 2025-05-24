@@ -75,13 +75,13 @@ A full-stack Todo list application that allows users to add, delete, and manage 
 ![TODO - 6](https://github.com/user-attachments/assets/455e792c-12d5-4b91-a4a5-af661a7d1d71)
 
 
-
 🌐 An open platform where developers and researchers can share and explore models
 
 🤖 Use the facebook/bart-large-cnn model (a powerful summarizer),
 
 🧾 Generate a short summary of your entire todo list.  
 ---
+
 💬 Slack
 
 Slack is a messaging platform designed for teams to communicate, collaborate, and stay organized in real time.
@@ -103,16 +103,32 @@ Slack is a messaging platform designed for teams to communicate, collaborate, an
 
 ---
 
+###.env
+
+🔹 Hugging Face to generate summaries.
+
+🔸 Slack Webhook (which acts like a tokenized URL to send messages).
+
+
+![todo-123](https://github.com/user-attachments/assets/e8f1b51b-84b7-473d-bb21-677a9f660d9a)
+
+---
 ![TODO- 8](https://github.com/user-attachments/assets/efd2efa1-02c0-449f-9e1c-726d0acfe026)
 
 
 ---
 
-🎯    Slack is a team collaboration tool that lets you chat, share files, and automate updates through integrations like webhooks.
+🎯 Slack is a team collaboration tool that lets you chat, share files, and automate updates through integrations like webhooks.
 
 
 ![TODO - 9](https://github.com/user-attachments/assets/30ee2a96-da27-4d9a-82f2-a3a1ca168fd3)
 
+
+
+---
+###  Deploy 
+
+![todo --000](https://github.com/user-attachments/assets/add6fef4-6421-4c83-875c-556aa9b7855e)
 
 ### ⚙️ Setup
 
