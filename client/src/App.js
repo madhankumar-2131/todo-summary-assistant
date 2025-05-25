@@ -3,20 +3,21 @@ import axios from 'axios';
 import './App.css';
 
 function TodoApp() {
-  const [todoList, setTodoList] = useState([]);
+  ///usestate...
+   const [todoList, setTodoList] = useState([]);
   const [statusMsg, setStatusMsg] = useState('');
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
-  const [inputText, setInputText] = useState('');
+   const [isDarkTheme, setIsDarkTheme] = useState(false);
+   const [inputText, setInputText] = useState('');
   const [motivation, setMotivation] = useState('');
 
   const motivationQuotes = [
     "Every morning is a fresh start. Make it count!",
-    "Push yourself, because no one else is going to do it for you.",
-    "The future depends on what you do today.",
-    "Success is the sum of small efforts repeated day in and day out.",
-    "Don’t watch the clock; do what it does — keep going."
+     "Push yourself, because no one else is going to do it for you.",
+     "The future depends on what you do today.",
+     "Success is the sum of small efforts repeated day in and day out.",
+     "Don’t watch the clock; do what it does — keep going."
   ];
-  // random  generate a Quotes
+  // random  generating a Quotes
   const showMotivation = () => {
     const randomIndex = Math.floor(Math.random() * motivationQuotes.length);
     setMotivation(motivationQuotes[randomIndex]);
@@ -32,6 +33,7 @@ function TodoApp() {
       setStatusMsg('Could not load todos.');
     }
   };
+  //add
   const handleAddTodo = async () => {
     if (!inputText.trim()) {
       alert('Todo cannot be empty');
@@ -47,7 +49,6 @@ function TodoApp() {
       setStatusMsg('Unable to add todo.');
     }
   };
-  // delete
   const handleDeleteTodo = async (todoId) => {
     try {
       await axios.delete(`http://localhost:5000/todos/${todoId}`);
@@ -58,7 +59,7 @@ function TodoApp() {
       setStatusMsg('Could not delete todo.');
     }
   };
-  // Send summary 
+  //slack send summary
   const sendSummary = async () => {
     try {
       const response = await axios.post('http://localhost:5000/summarize');
@@ -71,6 +72,7 @@ function TodoApp() {
   useEffect(() => {
     loadTodos();
   }, []);
+  ///theme  
   const containerStyle = {
     backgroundColor: isDarkTheme ? '#121212' : '#fff',
     color: isDarkTheme ? '#fff' : '#000',
@@ -150,3 +152,5 @@ function TodoApp() {
 }
 
 export default TodoApp;
+
+/// MADHANKUMAR
