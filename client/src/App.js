@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css';
 
 function TodoApp() {
-  ///usestate...
+  ///usestate
    const [todoList, setTodoList] = useState([]);
   const [statusMsg, setStatusMsg] = useState('');
    const [isDarkTheme, setIsDarkTheme] = useState(false);
